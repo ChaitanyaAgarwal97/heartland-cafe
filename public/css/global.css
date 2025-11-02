@@ -1,0 +1,36 @@
+:root {
+  --primary-color: #b73239;
+  --primary-light-color: #d94b4f;
+  --secondary-color: #3a2f28;
+  
+  --footer-primary:#d94b4f;
+  --footer-text:#7a665b;
+
+  --text-light: #fff;
+  --bg-light: #fffaf5;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --navigation-color: hsl(203 5 25 / 0.3);
+  --icon-default: hsl(203 5 75);
+  --transition: all 0.3s ease;
+}
+
+*,*::after,
+*::before  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+body {
+  /* font-family: "Poppins", sans-serif; */
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  background: var(--bg-light);
+  color: var(--secondary-color);
+  scroll-behavior: smooth;
+}

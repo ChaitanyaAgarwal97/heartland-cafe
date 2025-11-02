@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Heartland CAFÉ & RESTRO</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+ <footer class="footer" id="footer">
+  <div class="footer-container">
+
+    <!-- Left: Cafe Name / Logo -->
+    <div class="footer-brand">
+      <img src="/assets/logo.png" alt="Heartland Café Logo" class="footer-logo" onerror="this.style.display='none'">
+      <h3 class="footer-title">The Heartland Café</h3>
+      <p class="footer-tagline">Brewed with passion, served with warmth.</p>
+    </div>
+
+    <!-- Center: Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="/location">Location</a></li>
+        <li><a href="/menu">Menu</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i class="fa-solid fa-phone"></i> +91 {{contact.phone_number}}</p>
+      <p><i class="fa-solid fa-envelope"></i> {{contact.email}}</p>
+      <p><i class="fa-solid fa-location-dot"></i> {{contact.address}}</p>
+
+      <!-- Social Icons -->
+      <div class="footer-socials">
+        <a href="{{footer.insta}}" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="{{footer.fb}}" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="{{footer.x}}" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="{{footer.linkedin}}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <p>© 2025 The Heartland Café. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

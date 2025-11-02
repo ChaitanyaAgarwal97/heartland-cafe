@@ -1,0 +1,166 @@
+/* -----------------------------
+   HEARTLAND CAFE FOOTER
+------------------------------ */
+.footer {
+  background: linear-gradient(180deg, var(--bg-light, #fff9f5) 0%, #fff6f0 100%);
+  padding: 70px 6% 30px;
+  color: var(--text-dark, #2c1a10);
+  font-family: "Inter", sans-serif;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 2;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: var(--max-width, 1200px);
+  margin: 0 auto 30px;
+}
+
+/* Brand Section */
+.footer-brand {
+  flex: 1 1 260px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 14px;
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,0.1));
+}
+
+.footer-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--footer-primary);
+  margin-bottom: 6px;
+  font-family: "Playfair Display", serif;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  color: var(--footer-text);
+  font-style: italic;
+}
+
+/* Links */
+.footer-links {
+  flex: 1 1 180px;
+}
+
+.footer-links h4 {
+  color: var(--footer-primary);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+}
+
+.footer-links a {
+  color: var(--footer-text);
+  text-decoration: none;
+  font-size: 14.5px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--footer-primary);
+}
+
+/* Contact */
+.footer-contact {
+  flex: 1 1 240px;
+}
+
+.footer-contact h4 {
+  color: var(--footer-primary);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 14.5px;
+  color: var(--footer-text);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contact i {
+  color: var(--footer-primary);
+}
+
+/* Social Icons */
+.footer-socials {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+
+.footer-socials a {
+  color: var(--footer-primary);
+  background: rgba(217, 75, 79, 0.08);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  
+  transform: translateY(-3px);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  text-align: center;
+  font-size: 13.5px;
+  color: var(--footer-text);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 18px;
+}
+
+/* Reveal Animation */
+.footer.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s cubic-bezier(.2,.9,.2,1);
+}
+.footer.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand, .footer-links, .footer-contact {
+    flex: 1 1 100%;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}

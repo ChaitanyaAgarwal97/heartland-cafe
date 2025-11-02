@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Heartland CAFÉ & RESTRO</title>
+     <link rel="stylesheet" href="/css/location.css" />
+</head>
+<body>
+  {{> navbar}}
+    <section class="location-wrapper ">
+  <div class="location-container">
+    <h2 class="loc-heading">{{location_text.title1}}<span>{{location_text.title2}}</span></h2>
+    <p class="loc-tagline">{{location_text.desc}}</p>
+
+    <div class="loc-info-grid">
+      <div class="loc-info-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4>Address</h4>
+          <p>{{contact.address}}</p>
+        </div>
+      </div>
+
+      <div class="loc-info-box">
+        <i class="fas fa-clock"></i>
+        <div>
+          <h4>Timings</h4>
+          <p>Mon – Fri: 8 AM – 10 PM<br>Sat – Sun: 9 AM – 11 PM</p>
+        </div>
+      </div>
+
+      <div class="loc-info-box">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          <h4>Call Us</h4>
+          <p id="phoneNumber">+91 {{contact.phone_number}}</p>
+          <button class="copy-btn" onclick="copyPhone()">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-wrapper">
+      <iframe
+        class="map-frame"
+        
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.5288796110076!2d73.00618940952157!3d26.276949587029932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418d201796bb89%3A0x39cf5ec7566105ba!2sThe%20Heartland%20cafe%20and%20Restro!5e0!3m2!1sen!2sin!4v1762004253277!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <a
+      {{!-- href="https://www.google.com/maps/dir/?api=1&destination=Heartland+Cafe+Jodhpur" --}}
+      href="https://www.google.com/maps/dir//Plot+375,+4th+C+Rd,+near+Vastrashala+Modern+school,+Sardarpura,+Jodhpur,+Rajasthan+342006/@26.2769213,72.9263682,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39418d201796bb89:0x39cf5ec7566105ba!2m2!1d73.0087697!2d26.2769448?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D"
+      target="_blank"
+      class="direction-btn">
+      ☕ Get Directions
+    </a>
+  </div>
+</section>
+
+{{> footer}}
+
+<script src="/js/location.js"></script>
+
+
+
+</body>
+</html>

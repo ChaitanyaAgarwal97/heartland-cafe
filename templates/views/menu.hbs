@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Heartland CAFÉ & RESTRO</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+</head>
+<body>
+{{> navbar}}
+{{!-- heading --}}
+   <section id="menu-banner" class="menu-banner">
+  <div class="banner-content">
+    <span class="eyebrow">Welcome to the Flavor Journey</span>
+    <h1 class="banner-title">Our Menu</h1>
+    <p class="banner-subtitle">
+      Crafted with passion — where every sip and bite tells a story.  
+      Explore our signature coffee blends, artisan plates, and desserts made fresh every day.
+    </p>
+
+    <div class="banner-actions">
+      <a class="btn-primary" href="#imageSlider">
+        View Full Menu
+      </a>
+      {{!-- <button class="btn-outline" >Reserve a Table</button> --}}
+      <form action="/book-table" method="POST" target="_blank">
+  <button type="submit" class="btn-outline">Book Table</button>
+</form>
+    </div>
+  </div>
+
+  <div class="banner-decor" aria-hidden="true">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+  </div>
+</section>
+
+
+{{!-- imageslider --}}
+<section class="image_slider_Section" id="imageSlider">
+
+
+<div class="image-slider">
+    <section class="slider__content">
+        <button type="button" class="slider-control--button prev-button">
+            <svg width="16" height="16" fill="currentColor" class="icon arrow-left-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+            </svg>
+        </button>
+        <main class="image-display"></main>
+        <button type="button" class="slider-control--button next-button">
+            <svg width="16" height="16" fill="currentColor" class="icon arrow-right-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+            </svg>
+        </button>
+    </section>
+    <nav class="slider-navigation">
+  {{#each menu_images}}
+    <button class="nav-button" aria-selected="{{this.selected}}">
+      <img class="thumbnail" src="{{this.image}}" alt="Thumbnail" />
+    </button>
+  {{/each}}
+</nav>
+
+</div>
+</section>
+
+{{> footer}}
+<script src="/js/menu.js"></script>
+
+</body>
+</html>
