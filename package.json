@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js --ext js,hbs,css"
   },
+  "engines": { "node": "22.x" },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodeHex-3/OnServ.git"
